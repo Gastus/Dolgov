@@ -5,72 +5,106 @@
 	Barbershop BORODINSKI
 </title>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<div class="header">
-		<div class="main-nav">
+		<nav>
 			<ul>
 				<li>
-					<a href="#">Новости</a>
+					<a href="#">НОВОСТИ</a>
 				</li>
 				<li>
-					<a href="#">Прайс-лист</a>
+					<a href="#">ПРАЙС-ЛИСТ</a>
 				</li>
 				<li>
-					<a href="#">Магазин</a>
+					<a href="#">МАГАЗИН</a>
 				</li>
 				<li>
-					<a href="#">Контакты</a>
+					<a href="#">КОНТАКТЫ</a>
 				</li>
 				<li>
-					<a href="#">Выход</a>
+					<a href="#">ВЫХОД</a>
 				</li> 
 			</ul>
-		</div>
+		</nav>
 		<div class="header-bottom">
 			<img class="logo" src="#">
+			<h1>Barbershop BORODINSKI</h1>
 			<div class="features">
-				<div class="feature-item">
-					<h1>Быстро</h1>
-					<p>Мы делаем свою работу быстро! Два часа 
-					пролетят незаменто и Вы - счастливый 
-					обладатель стильной стрижки-минутки!</p>
-				</div>
-				<div class="feature-item">
-					<h1>Круто</h1>
-					<p>Забудьте, как Вы стриглись раньше. 
-					Мы сделаем из Вас звезду футбола или кино! 
-					Во всяком случае внешне.</p>
-				</div>
-				<div class="feature-item">
-					<h1>Дорого</h1>
-					<p>Наши мастера - профессионалы своего дела и 
-					не могут стоить дешево. К тому же, разве цена
-					не дает определенный статус?</p>
-				</div>
+				<ul>
+					<li class="feature-item">
+						<h3>БЫСТРО</h3>
+						<p>Мы делаем свою работу быстро! Два часа 
+						пролетят незаменто и Вы - счастливый 
+						обладатель стильной стрижки-минутки!</p>
+					</li>
+					<li class="feature-item">
+						<h3>КРУТО</h3>
+						<p>Забудьте, как Вы стриглись раньше. 
+						Мы сделаем из Вас звезду футбола или кино! 
+						Во всяком случае внешне.</p>
+					</li>
+					<li class="feature-item">
+						<h3>ДОРОГО</h3>
+						<p>Наши мастера - профессионалы своего дела и 
+						не могут стоить дешево. К тому же, разве цена
+						не дает определенный статус?</p>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
 	<div class="main">
-		<div class="news"></div>
-		<div class="gallery"></div>
-		<div class="iformation"></div>
+		<div class="news">
+			<h2>НОВОСТИ</h2>
+			<ul>
+				<li>
+					<p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! 
+					ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
+					<span><b>11 января</b></span>
+				</li>
+				<li>
+					<p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, 
+					ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
+					<span><b>18 янаваря</b></span>
+				</li>
+			</ul>
+			<a class="button" href="#">ВСЕ НОВОСТИ</a>
+		</div>
+		<div class="gallery">
+			<h2>ФОТОГАЛЕРЕЯ</h2>
+			<img src="#">
+			<a class="button" href="#">НАЗАД</a>
+			<a class="button" href="#">ВПЕРЕД</a>
+		</div>
+		<div class="iformation">
+			<h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+			<p>БАРБЕРШОП «БОРОДИНСКИЙ»
+			АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8
+			ТЕЛЕФОН: +7 (495) 666-02-66</p>
+			<p>ВРЕМЯ РАБОТЫ: 
+			ПН—ПТ: С 10:00 ДО 22:00
+			СБ—ВС: С 10:00 ДО 19:00</p>
+			<a class="button" href="#">КАК ПРОЕХАТЬ</a>
+			<a class="button" href="#">ОБРАТНАЯ СВЯЗЬ</a>
+
+		</div>
 		<div class="form">
-			<h2>Записаться</h2>
-			<p>Укажите желаемую дату и время и мы свяжемся
-			с Вами для подтверждения брони</p>
+			<h2>ЗАПИСАТЬСЯ</h2>
+			<p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ
+			С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
 			<form action="#" method="post">
-				<label for="date">Дата</label>
+				<label for="date">ДАТА</label>
 				<input type="date" id="date" name="date">
 
-				<label for="time">Время</label>
+				<label for="time">ВРЕМЯ</label>
 				<input type="time" id="time" name="time">
 
-				<label for="name">Ваше имя</label>
+				<label for="name">ВАШЕ ИМЯ</label>
 				<input type="text" id="name" name="name" value="Борода">
 
-				<label for="phone">Телефон</label>
+				<label for="phone">ТЕЛЕФОН</label>
 				<input type="text" id="phone" name="phone">
 
 				<input type="submit" value="Отправить">
@@ -78,9 +112,29 @@
 		</div>
 	</div>
 	<div class="footer">
-		<div class="contacts"></div>
-		<div class="social"></div>
-		<div class="htmlacademy"></div>
+		<div class="contacts">
+			<p>БАРБЕРШОП «БОРОДИНСКИЙ»
+			АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8</p>
+			<a href="#">КАК НАС НАЙТИ?</a>
+		</div>
+		<div class="social">
+			<span>ДАВАЙТЕ ДРУЖИТЬ!</span>
+			<ul>
+				<li>
+					<a href="#">VK</a>
+				</li>
+				<li>
+					<a href="#">Facebook</a>
+				</li>
+				<li>
+					<a href="#">Instagram</a>
+				</li>
+			</ul>	
+		</div>
+		<div class="htmlacademy">
+			<span>РАЗРАБОТАНО:</span>
+			<a class="button" href="#">html academy</a>
+		</div>
 	</div>
 
 </body>

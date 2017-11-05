@@ -1,116 +1,128 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-<title>
-	Barbershop BORODINSKI
-</title>
-<meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-	<header>
-		<nav>			
-			<a href="#">Новости</a>			
-			<a href="#">Прайс-лист</a>			
-			<a href="#">Магазин</a>
-			<a href="#">Контакты</a>
-			<a href="#">Выход</a> 
-		</nav>
-	</header>
-	<main>
-		<img class="logo" src="images/logo1.png">
-		<div class="features">
-			<div class="feature-item">
-				<h3>Быстро</h3>
-				<p>Мы делаем свою работу быстро! Два часа 
-				пролетят незаменто и Вы - счастливый 
-				обладатель стильной стрижки-минутки!</p>
-			</div >
-			<div  class="feature-item">
-				<h3>Круто</h3>
-				<p>Забудьте, как Вы стриглись раньше. 
-				Мы сделаем из Вас звезду футбола или кино! 
-				Во всяком случае внешне.</p>
-			</div >
-			<div  class="feature-item">
-				<h3>Дорого</h3>
-				<p>Наши мастера - профессионалы своего дела и 
-				не могут стоить дешево. К тому же, разве цена
-				не дает определенный статус?</p>
-			</div >			
+	<head>
+		<title>
+			Barbershop BORODINSKI
+		</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="#">Информация</a>			
+				<a href="#">Новости</a>			
+				<a href="#">Прайс-лист</a>			
+				<a href="#">Магазин</a>
+				<a href="#">Контакты</a>
+				<a class="login" href="#">Вход</a> 
+			</nav>
+		</header>
+		<div class="container">
+		<main>
+      		<div class="logo">
+				<img src="images/logo1.png" alt="Барбершоп БОРОДИНСКИЙ">
+      		</div>
+			<div class="features clearfix">
+				<div class="feature-item">
+					<h3>Быстро</h3>
+					<p>Мы делаем свою работу быстро! Два часа 
+					пролетят незаменто и Вы - счастливый 
+					обладатель стильной стрижки-минутки!</p>
+				</div >
+				<div  class="feature-item">
+					<h3>Круто</h3>
+					<p>Забудьте, как Вы стриглись раньше. 
+					Мы сделаем из Вас звезду футбола или кино! 
+					Во всяком случае внешне.</p>
+				</div >
+				<div  class="feature-item">
+					<h3>Дорого</h3>
+					<p>Наши мастера - профессионалы своего дела и 
+					не могут стоить дешево. К тому же, разве цена
+					не дает определенный статус?</p>
+				</div >			
 			</div>
-		<div class="news">
-			<h2>Новости</h2>
-			<p>Нам наконец завезли ягермайстер! 
-			теперь вы можете пропустить стаканчик во время стрижки
-			<span>11 января</span>
-			</p>			
-			<p>В нашей команде пополнение, Борис «бритва» Стригунец, 
-			обладатель множества титулов и наград пополнил наши стройные ряды
-			<span>18 янаваря</span>
-			</p>
-			<a class="button" href="#">Все новости</a>
-		</div>
-		<div class="gallery">
-			<h2>Фотогалерея</h2>
-			<img src="images/gallery1.png">
-			<input type="button" value="Назад">
-			<input type="button" value="Вперед">
-		</div>
-		<div class="iformation">
-			<h2>Контактная информация</h2>
-			<p>Барбершоп «БОРОДИНСКИЙ»
-			Адрес: г. Санкт-Петербург, ул. б. конюшенная, д. 19/8
-			Телефон: +7 (495) 666-02-66</p>
-			<p>Время работы: 
-			ПН—ПТ: С 10:00 ДО 22:00
-			СБ—ВС: С 10:00 ДО 19:00</p>
-			<a class="button" href="#">Как добраться</a>
-			<a class="button" href="#">Обратная связь</a>
-		</div>
-		<div class="form">
-			<h2>Записаться</h2>
-			<p>Укажите желаемую дату и время и мы свяжемся 
-			с Вами для подтверждения брони</p>
-			<form action="#" method="post">
-				<div class="form-item">
-					<label for="date">Дата</label>
-					<input type="date" id="date" name="date">
+			<div class="news-and-gallery clearfix">
+				<div class="news">
+					<h2>Новости</h2>
+					<p>Нам наконец завезли ягермайстер! теперь вы можете 
+					пропустить стаканчик во время стрижки
+					<br><span>11 января</span>
+					</p>			
+					<p>В нашей команде пополнение, Борис «бритва» Стригунец, 
+					обладатель множества титулов и наград пополнил наши стройные ряды
+					<br><span>18 янаваря</span>
+					</p>
+					<a class="button" href="#">Все новости</a>
 				</div>
-				<div class="form-item">
-					<label for="time">Время</label>
-					<input type="time" id="time" name="time">
+				<div class="gallery">
+					<h2>Фотогалерея</h2>
+					<img src="images/gallery1.png" alt="Фото">
+					<div class="pagenator">
+						<button class="last-page">Назад</button>
+						<button class="next-page">Вперед</button>
+					</div>
 				</div>
-				<div class="form-item">
-					<label for="name">Ваше имя</label>
-					<input type="text" id="name" name="name" value="Борода">
+			</div>
+			<div class="info-and-form clearfix">
+				<div class="info">
+					<h2>Контактная информация</h2>
+					<p>Барбершоп «БОРОДИНСКИЙ»
+					<br>Адрес: г. Санкт-Петербург, ул. б. конюшенная, д. 19/8
+					<br>Телефон: +7 (495) 666-02-66</p>
+					<p>Время работы: 
+					<br>ПН—ПТ: С 10:00 ДО 22:00
+					<br>СБ—ВС: С 10:00 ДО 19:00</p>
+					<a class="button" href="#">Как добраться</a>
+					<a class="button" href="#">Обратная связь</a>
 				</div>
-				<div class="form-item">
-					<label for="phone">Телефон</label>
-					<input type="text" id="phone" name="phone">
+				<div class="form">
+					<h2>Записаться</h2>
+					<p>Укажите желаемую дату и время и мы свяжемся 
+					<br>с Вами для подтверждения брони</p>
+					<form action="#" method="post">
+						<div class="form-item">
+							<label for="date">Дата</label>
+							<input type="text" id="date" name="date">
+						</div>
+						<div class="form-item">
+							<label for="time">Время</label>
+							<input type="text" id="time" name="time">
+						</div>
+						<div class="form-item">
+							<label for="name">Ваше имя</label>
+							<input type="text" id="name" name="name" value="Борода">
+						</div>
+						<div class="form-item">
+							<label for="phone">Телефон</label>
+							<input type="text" id="phone" name="phone">
+						</div>
+						<button>Отправить</button>						
+					</form>
 				</div>
-				<div class="form-item">
-					<input type="submit" value="Отправить">
+			</div>
+		</main>
+		</div>
+		<footer>
+			<div class="container clearfix">
+				<div class="contacts">
+					<p>Барбершоп «БОРОДИНСКИЙ»
+					<br>Адрес: г. Санкт-Петербург, ул. б. конюшенная, д. 19/8
+					<br><a href="#">Как нас найти?</a>
+					<br>Телефон: +7 (495) 666-02-66</p>
 				</div>
-			</form>
-		</div>
-	</main>
-	<footer>
-		<div class="contacts">
-			<p>Барбершоп «БОРОДИНСКИЙ»
-			Адрес: г. Санкт-Петербург, ул. б. конюшенная, д. 19/8</p>
-			<a href="#">Как нас найти?</a>
-		</div>
-		<div class="social">
-			<span>Давайте дружить!</span>
-			<a href="#">VK</a>
-			<a href="#">Facebook</a>
-			<a href="#">Instagram</a>	
-		</div>
-		<div class="htmlacademy">
-			<span>Разработано:</span>
-			<a class="button" href="#">html academy</a>
-		</div>
-	</footer>
-</body>
+				<div class="social">
+					<p>Давайте дружить!</p>
+					<a href="#">VK</a>
+					<a href="#">Facebook</a>
+					<a href="#">Instagram</a>	
+				</div>
+				<div class="htmlacademy">
+					<p>Разработано:</p>
+					<a class="button" href="#">html academy</a>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>

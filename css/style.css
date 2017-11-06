@@ -8,7 +8,7 @@ body {
     line-height: 24px;
     text-decoration: none;
     text-transform: uppercase;
-	background: rgb(7,7,7) url(../images/main_background.png) no-repeat center center;
+	background: rgb(7, 7, 7) url(../images/main_background.png) no-repeat 50% 50%;
 }
 
 p {
@@ -56,8 +56,9 @@ nav a {
 	display: inline-block;
     font-size: 16px;
     color: rgb(255,255,255);
-    padding: 26px 0;
-    margin-right: 40px;
+    padding: 25px 0;
+    margin-right: 20px;
+    margin-left: 20px;
     vertical-align: middle;
     text-decoration: none;
 }
@@ -68,14 +69,15 @@ nav .login {
 }
 
 .logo {
-	margin: auto;
+	margin: 0 auto 76px auto;
+
 }
 
 .logo img {
 	margin: 0 auto;
 	width: 371px;
 	display: block;
-	margin: 60px auto 72px auto;
+	margin: 60px auto 0 auto;
 }
 
 .features {
@@ -99,6 +101,16 @@ nav .login {
 	font-size: 30px;
 	line-height: 42px;
 	text-align: center;
+	margin: 0;
+}
+
+.decoration {
+	width: 20px;
+	height: 20px;
+	margin: 12px auto 26px auto;
+	background: rgb(255, 255, 255);
+	transform: rotate(45deg);
+	
 }
 
 .feature-item p {
@@ -159,9 +171,10 @@ nav .login {
 
 .gallery img {
 	display: block;
-	width: 292px;
+	width: 100%;
 	border: 4px solid rgb(255,255,255);
 	margin-bottom: 38px;
+	box-sizing: border-box;
 }
 
 
@@ -211,7 +224,7 @@ nav .login {
 	height: 44px;
 	width: 140px;
 	box-sizing: border-box;
-	padding-top: 13px;
+	padding-top: 11px;
 	margin-right: 20px;
 	text-align: center;
 }
@@ -278,7 +291,7 @@ nav .login {
 
 footer {
 	width: 100%;
-	min-height: 193px;
+	min-height: 133px;
 	margin: 0 auto;
 	padding: 60px 0 0 0;
 	background-image: url(../images/back_footer.png);
